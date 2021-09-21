@@ -1,0 +1,60 @@
+= Workday Connector Reference
+
+Use Workday as a data source or data target.
+Some details of how to work with data in a flow are specific to the data source or data target, and to the specific trigger or actions you choose.
+
+== Connections
+
+include::_partials/connection-definition.adoc[]
+
+include::_partials/connection-name.adoc[]
+
+Tenant Name::
+
+The name or ID of your Workday tenant
++
+For example, if the URL where you log into Workday is `na.workday.com/wday/authgwy/global-modern/`, then your tenant name is `global-modern`.
+
+User Name and Password::
+
+The username and password that you use to log in to the system
+
+== Triggers
+
+New or updated object::
+
+This trigger checks for a new or updated object.
+
+
+== Actions
+
+Get Worker Details by ID::
+
+This action returns the worker details corresponding to the employee's `Workday ID` that you supply.
+
+Create Worker::
+
+This action creates a new worker.
+
+Update Job Requisition::
+
+This action updates the details on a job requisition.
+
+Get Customer::
+
+This action returns the customer details corresponding to the customer ID that you supply.
+
+== Object Types
+
+The following object types are available:
+
+* Triggers
+    ** JOB_REQUISITIONS
+    ** WORKER
+
+* Actions
+    ** CUSTOMER
+    ** JOB_REQUISITIONS
+    ** WORKER
+
+include::_partials/see-also.adoc[]
